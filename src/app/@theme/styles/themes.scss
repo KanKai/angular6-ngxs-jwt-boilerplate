@@ -1,0 +1,50 @@
+// @nebular theming framework
+@import '~@nebular/theme/styles/theming';
+// @nebular out of the box themes
+@import '~@nebular/theme/styles/themes';
+
+// which themes you what to enable (empty to enable all)
+$nb-enabled-themes: (default);
+
+$nb-themes: nb-register-theme((
+ // app wise variables for each theme
+  sidebar-header-gap: 0rem,
+  sidebar-header-height: initial,
+  layout-content-width: 1400px,
+
+  font-main: Roboto,
+  font-secondary: Exo,
+
+  switcher-background: #ebeff5,
+  switcher-background-percentage: 50%,
+  drops-icon-line-gadient: -webkit-linear-gradient(#01dbb5, #0bbb79),
+  
+  menu-submenu-item-border-radius: 0px,
+  menu-submenu-item-border-width: 0px,
+  menu-submenu-hover-bg: #F5AA00,
+  menu-submenu-bg: #46577B,
+  menu-submenu-active-bg: #F5AA00, 
+
+  menu-bg: #46577B,
+  menu-active-bg: #F5AA00, 
+  menu-font-size: 18px,
+
+  menu-icon-color: white,
+  menu-icon-font-size: 1.5rem,
+  menu-icon-margin: 0 1rem 0 0rem,
+  sidebar-bg: #46577B,
+  sidebar-width: 18rem,
+  sidebar-width-compact: 4rem,
+  color-header-bg:  #46577B,
+  color-sidebar-bg:  #46577B,
+  color-fg-highlight: #46577B,
+  color-success: #46577B,
+  color-bg-active: #46577B,
+
+  color-menu-title: white,
+  color-header-title: white,
+  
+  link-color: #46577B,
+  link-color-hover: #46577B,
+  
+), default, default);
